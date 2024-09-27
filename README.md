@@ -298,12 +298,12 @@ class SurveyResponseForm(forms.ModelForm):
             'question2': forms.Select(choices=RESPONSE_CHOICES),
             # Add widgets for remaining questions
         }
-Usage
-Upload an Image: Upload an image through the application interface for stress detection.
-Fill Out the Survey: Complete the periodic survey to help track stress levels.
-View Results: The system displays the stress levels based on both the image and survey responses.
-Contact
-For questions, suggestions, or contributions, please reach out at your.email@example.com.
+### **Usage**
+**Upload an Image**: Upload an image through the application interface for stress detection.
+**Fill Out the Survey**: Complete the periodic survey to help track stress levels.
+**View Results**: The system displays the stress levels based on both the image and survey responses.
+## Contact
+For questions, suggestions, or contributions, please reach out at your.anilmc002@gmail.com.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
