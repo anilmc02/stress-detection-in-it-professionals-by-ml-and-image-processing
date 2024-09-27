@@ -1,0 +1,17 @@
+<!-- users/survey_response_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Response Form</title>
+</head>
+<body>
+    <h2>Survey Response Form</h2>
+
+    
+    <form method="post" action="{% url 'survey_response_action' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>

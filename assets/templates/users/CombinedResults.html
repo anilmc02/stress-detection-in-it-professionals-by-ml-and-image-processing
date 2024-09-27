@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Results</title>
+
+    <!-- Add your CSS styles here -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+
+    <!-- Add your JavaScript scripts here -->
+    <script>
+        // You can add JavaScript functionality here if needed
+        // For example, handling user interactions or dynamic updates
+    </script>
+</head>
+<body>
+
+<h1>Combined Results</h1>
+
+<div>
+    <p><strong>Detected Emotion:</strong> {{ user_prediction.emotions }}</p>
+    <p><strong>Survey Score:</strong> {{ survey_score }}</p>
+    <p><strong>Stress Level from Survey:</strong> {{ stress_level_from_survey }}</p>
+    <p><strong>Stress Level from Image:</strong> {{ stress_level }}</p>
+    <p><strong>Determined Emotion:</strong> {{ determined_emotion }}</p>
+</div>
+
+<!-- Image container with CSS class 'image-container' -->
+
+
+</body>
+</html>

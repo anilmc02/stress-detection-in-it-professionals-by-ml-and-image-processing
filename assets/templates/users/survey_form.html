@@ -1,0 +1,126 @@
+survey_form.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work-Related Stress Survey</title>
+</head>
+<body>
+    <h2>Work-Related Stress Survey</h2>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <!-- Question 1 -->
+        <p>1) Are you experiencing difficulty falling asleep or staying asleep due to work-related concerns?</p>
+        <label><input type="radio" name="q1" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Occasionally</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Not at all</label><br>
+
+        <!-- Question 2 -->
+        <p>2) Do you often find yourself feeling overwhelmed by the workload?</p>
+        <label><input type="radio" name="q2" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Not at all</label><br>
+
+        <!-- Question 3 -->
+        <p>3) Are you frequently irritable or short-tempered with colleagues or family members?</p>
+        <label><input type="radio" name="q3" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Occasionally</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Not at all</label><br>
+
+        <!-- Question 4 -->
+        <p>4) Have you noticed changes in your eating habits, such as overeating or loss of appetite?</p>
+        <label><input type="radio" name="q4" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q4" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q4" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q4" value="d"> d) Not at all</label><br>
+
+        <!-- Question 5 -->
+        <p>5) Are you relying on caffeine or other stimulants to keep you alert during the day?</p>
+        <label><input type="radio" name="q5" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q5" value="b"> b) Occasionally</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q5" value="d"> d) Not at all</label><br>
+
+        <!-- Question 6 -->
+        <p>6) Have you lost interest in activities or hobbies you once enjoyed?</p>
+        <label><input type="radio" name="q6" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Not at all</label><br>
+
+        <!-- Question 7 -->
+        <p>7) Are you experiencing physical symptoms like headaches, muscle tension, or digestive issues?</p>
+        <label><input type="radio" name="q7" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Occasionally</label><br>
+        <label><input type="radio" name="q7" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Not at all</label><br>
+
+        <!-- Question 8 -->
+        <p>8) Have you neglected self-care, such as exercise or regular medical check-ups?</p>
+        <label><input type="radio" name="q8" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Occasionally</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Not at all</label><br>
+
+        <!-- Question 9 -->
+        <p>9) Are you frequently working long hours, including weekends and holidays?</p>
+        <label><input type="radio" name="q9" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Not at all</label><br>
+
+        <!-- Question 10 -->
+        <p>10) Do you feel that your contributions at work are not appreciated or recognized?</p>
+        <label><input type="radio" name="q10" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q10" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Not at all</label><br>
+
+        <!-- Question 11 -->
+        <p>11) Do you have difficulty setting clear boundaries with your supervisors or colleagues?</p>
+        <label><input type="radio" name="q11" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q11" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q11" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q11" value="d"> d) Not at all</label><br>
+
+        <!-- Question 12 -->
+        <p>12) Do you frequently experience technology-related frustrations or setbacks?</p>
+        <label><input type="radio" name="q12" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q12" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q12" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q12" value="d"> d) Not at all</label><br>
+
+        <!-- Question 13 -->
+        <p>13) Have you had conflicts with coworkers or supervisors that cause you stress?</p>
+        <label><input type="radio" name="q13" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q13" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q13" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q13" value="d"> d) Not at all</label><br>
+
+        <!-- Question 14 -->
+        <p>14) Are you neglecting breaks or time for relaxation during the workday?</p>
+        <label><input type="radio" name="q14" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q14" value="b"> b) Occasionally</label><br>
+        <label><input type="radio" name="q14" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q14" value="d"> d) Not at all</label><br>
+
+        <!-- Question 15 -->
+        <p>15) Have you seen a significant increase in your workload without additional support or resources?</p>
+        <label><input type="radio" name="q15" value="a"> a) Yes, frequently</label><br>
+        <label><input type="radio" name="q15" value="b"> b) Sometimes</label><br>
+        <label><input type="radio" name="q15" value="c"> c) Rarely</label><br>
+        <label><input type="radio" name="q15" value="d"> d) Not at all</label><br>
+
+        <br><br>
+        
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
